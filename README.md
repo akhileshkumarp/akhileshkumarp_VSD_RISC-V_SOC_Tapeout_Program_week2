@@ -8,6 +8,9 @@ This week_2 has the follwing conents:
 
 contents will be updated as things progress.
 
+Theory_Conceptual_Understanding
+Functional_Modelling
+
 
 for community support go to: https://github.com/vsdip/IndiaRiscvTapeoutProgram
 
