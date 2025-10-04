@@ -66,6 +66,8 @@ BabySoC serves as an ideal learning platform because it:
 3. **Real-World Application**: Demonstrates practical digital-to-analog interfacing
 4. **Documentation Rich**: Highly documented design facilitating understanding
 
+![VSD BabySoC Architecture](../Assets/VSD_BabySoc.png)
+
 ### Core Learning Objectives
 - **Digital Design Principles**: Understanding processor architecture and operation
 - **Analog-Digital Integration**: Learning how digital systems interface with analog devices
