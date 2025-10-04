@@ -4,7 +4,7 @@
 
 The RISC-V Reference SoC Tapeout Program focuses on designing and implementing a compact, open-source **System-on-Chip (SoC)** called **BabySoC**, built around the RVMYTH RISC-V processor core. This educational platform integrates essential analog and digital components to demonstrate real-world SoC design principles and serves as a stepping stone toward understanding complex semiconductor design flows.
 
-![SoC Architecture](../Assets/soc.png)
+![SoC Architecture](../Theory_assets/soc.png)
 
 ---
 
@@ -66,7 +66,7 @@ BabySoC serves as an ideal learning platform because it:
 3. **Real-World Application**: Demonstrates practical digital-to-analog interfacing
 4. **Documentation Rich**: Highly documented design facilitating understanding
 
-![VSD BabySoC Architecture](../Assets/VSD_BabySoc.png)
+![VSD BabySoC Architecture](../Theory_assets/VSD_BabySoc.png)
 
 ### Core Learning Objectives
 - **Digital Design Principles**: Understanding processor architecture and operation
