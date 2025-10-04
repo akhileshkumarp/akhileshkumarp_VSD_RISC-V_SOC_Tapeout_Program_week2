@@ -8,9 +8,10 @@ This week_2 has the follwing conents:
 
 contents will be updated as things progress.
 
-Theory_Conceptual_Understanding
-Functional_Modelling
+[Theory & Conceptual Understanding](Theory_Conceptual_Understanding/README.md)
 
+
+[Functional Modelling](Functional_Modelling/README.md)
 
 for community support go to: https://github.com/vsdip/IndiaRiscvTapeoutProgram
 
