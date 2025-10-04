@@ -169,6 +169,18 @@ The functional model also helps us identify opportunities for system improvement
 
 ---
 
+STEPS for simulation: 
+pre req installation for verilog from tlv files
+![Pipx Installation for Sandpiper](../Simulation_assets/pipx_installation_for_sandpiper.png)
+
+![Sandpiper Installation](../Simulation_assets/Sandpiper_installation.png)
+
+![Generate RVMYTH Verilog from TLV](../Simulation_assets/Generate_rvmyth_v_from_rvmyth_tlv.png)
+
+![Compile and Simulate iVerilog using Makefile](../Simulation_assets/Compile_and_simulate_iVerilog_using_makefile.png)
+
+The VCD dump can be found here: [pre_synth_sim.vcd](../Simulation_assets/pre_synth_sim.vcd)
+
 ## Conclusion
 
 Functional modeling of VSDBabySoC provides the foundation for successful hardware implementation. By understanding how RVMYTH, PLL, and DAC work together, we can design and verify a system that meets its specifications before investing in costly RTL development and physical implementation.
