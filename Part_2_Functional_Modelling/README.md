@@ -74,6 +74,7 @@ Get the verilog files using sandpiper from the tlv files.
 below are the generated files. 
 
 rvmyth_gen.v
+
 rvmyth.v
 
 Generate RVMYTH Verilog from TLV: 
@@ -124,6 +125,8 @@ src/module/testbench.v:63: $finish called at 84999000 (1ps)
     │   ├── testbench.v
     │   └── vsdbabysoc.v
 
+
+**Compile and Simulate iVerilog using Makefile**
 
 ![Compile and Simulate iVerilog using Makefile](../Simulation_assets/Compile_and_simulate_iVerilog_using_makefile.png)
 
