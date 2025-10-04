@@ -2,9 +2,9 @@ Welcome to the week 2 repo akhileshkumarp_VSD_RISC-V_SOC_Tapeout_Program_week_2 
 
 This week_2 has the follwing conents: 
 
-PART1: [Theory & Conceptual Understanding](Theory_Conceptual_Understanding/README.md)
+PART1: [Theory & Conceptual Understanding](Part_1_Theory_Conceptual_Understanding/README.md)
 
-PART2: [Functional Modelling](Functional_Modelling/README.md)
+PART2: [Functional Modelling](Part_2_Functional_Modelling/README.md)
 
 
 Please find the History contents below:
