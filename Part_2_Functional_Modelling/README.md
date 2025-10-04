@@ -95,7 +95,7 @@ Get the verilog files using sandpiper from the tlv files.
 │       └── pre_synth_sim.vcd
 
 
-The VCD dump can be found here: [pre_synth_sim.vcd](../Simulation_assets/pre_synth_sim.vcd)
+**The VCD dump can be found here:** [pre_synth_sim.vcd](../Simulation_assets/pre_synth_sim.vcd)
 
 
 Reset flow along with clock can be seen below 
