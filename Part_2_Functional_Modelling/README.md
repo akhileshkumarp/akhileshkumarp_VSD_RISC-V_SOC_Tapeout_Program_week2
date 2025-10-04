@@ -78,6 +78,7 @@ rvmyth.v
 
 Generate RVMYTH Verilog from TLV: 
 
+```terminal
 akhileshkumarp@akhileshkumarp:~/VSD_Babysoc/VSDBabySoC$ make pre_synth_sim
 sandpiper-saas -i src/module/rvmyth.tlv -o rvmyth.v \
 	--bestsv --noline -p verilog --outdir output/compiled_tlv
@@ -105,6 +106,7 @@ if [ ! -f "output/pre_synth_sim/pre_synth_sim.vcd" ]; then \
 fi
 VCD info: dumpfile pre_synth_sim.vcd opened for output.
 src/module/testbench.v:63: $finish called at 84999000 (1ps)
+```
 
 
 ![Generate RVMYTH Verilog from TLV](../Simulation_assets/Generate_rvmyth_v_from_rvmyth_tlv.png)
