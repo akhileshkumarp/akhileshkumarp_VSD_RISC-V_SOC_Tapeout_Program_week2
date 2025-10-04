@@ -181,6 +181,15 @@ pre req installation for verilog from tlv files
 
 The VCD dump can be found here: [pre_synth_sim.vcd](../Simulation_assets/pre_synth_sim.vcd)
 
+
+Reset flow along with clock can be seen below 
+
+![Reset Wave Main and CPU](../Simulation_assets/Reset_wave_main_and_cpu.png)
+
+make the analog interpolate to get analog wave of OUT signal of the DAC
+
+![Analog Interpolate of OUT Signal](../Simulation_assets/Analog_interpolate_of_out.png)
+
 ## Conclusion
 
 Functional modeling of VSDBabySoC provides the foundation for successful hardware implementation. By understanding how RVMYTH, PLL, and DAC work together, we can design and verify a system that meets its specifications before investing in costly RTL development and physical implementation.
