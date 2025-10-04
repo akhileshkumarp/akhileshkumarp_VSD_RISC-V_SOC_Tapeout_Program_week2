@@ -165,6 +165,14 @@ make the analog interpolate to get analog wave of OUT signal of the DAC
 
 ![Output Cursor Inspect - RV to DAC vs OUT](../Simulation_assets/Out_curser_inspect_rv_to_Dac_vs_out.png)
 
+Overall simulation zoomed view looks like below
+
+![Overall Simulation Zoomed View](../Simulation_assets/sim_overall.png)
+
+Overall simulation fit view looks like below
+
+![Overall Simulation Fit View](../Simulation_assets/sim_overall_fit.png)
+
 ## Conclusion
 
 Functional modeling of VSDBabySoC provides the foundation for successful hardware implementation. By understanding how RVMYTH, PLL, and DAC work together, we can design and verify a system that meets its specifications before investing in costly RTL development and physical implementation.
