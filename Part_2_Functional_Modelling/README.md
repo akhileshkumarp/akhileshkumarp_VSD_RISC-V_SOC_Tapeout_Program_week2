@@ -60,6 +60,9 @@ Before moving to RTL implementation, we need to thoroughly verify our functional
 
 **Below we can see the steps followed for functional simulation:** 
 
+**clone the BabySoC project repo**
+iverilog and gtkwave are pre installed as per week0 task.
+
 **Pre requisite - installation of Sandpiper for verilog from tlv files**
 Install pipx to create virtual env for snadpiper. 
 ![Pipx Installation for Sandpiper](../Simulation_assets/pipx_installation_for_sandpiper.png)
@@ -68,6 +71,10 @@ Install Sandpiper to convert tlv files to verilog files.
 ![Sandpiper Installation](../Simulation_assets/Sandpiper_installation.png)
 
 Get the verilog files using sandpiper from the tlv files.
+below are the generated files. 
+
+rvmyth_gen.v
+rvmyth.v
 ![Generate RVMYTH Verilog from TLV](../Simulation_assets/Generate_rvmyth_v_from_rvmyth_tlv.png)
 
     ├── module
