@@ -18,7 +18,7 @@ VSDBabySoC is designed as a compact yet powerful learning platform that demonstr
 
 **Phase-Locked Loop (PLL)**: The PLL serves as our timing backbone. Without proper timing, digital systems fall apart quickly. The PLL takes a reference clock signal and generates a stable, synchronized clock that keeps all our components working in harmony. It's like having a conductor for an orchestra - everything needs to stay in sync.
 
-**10-bit Digital-to-Analog Converter (DAC)**: This component bridges the digital and analog worlds. It takes the processed digital values from RVMYTH and converts them into analog signals that can drive real-world devices like speakers, displays, or other analog systems.
+**Digital-to-Analog Converter (DAC)**: This component bridges the digital and analog worlds. It takes the processed digital values from RVMYTH and converts them into analog signals that can drive real-world devices like speakers, displays, or other analog systems.
 
 ---
 
@@ -66,7 +66,7 @@ The PLL's job might seem simple, but it's actually quite complex. Our functional
 In real implementations, PLLs can be sensitive to temperature, voltage variations, and electromagnetic interference. Our functional model helps us understand these dependencies and plan for robust operation.
 
 ### DAC Conversion Process
-The 10-bit DAC takes digital input values and converts them to analog voltages. Our functional model defines:
+The DAC takes digital input values and converts them to analog voltages. Our functional model defines:
 
 - **Conversion Speed**: How quickly each digital value is converted
 - **Output Range**: The voltage range of the analog output
@@ -105,23 +105,7 @@ Every SoC design involves balancing power consumption with performance. Our func
 ## Verification and Testing Strategy
 
 ### Functional Verification Approach
-Before moving to RTL implementation, we need to thoroughly verify our functional model. This includes:
-
-**Unit Testing**: Testing each component individually to ensure it meets specifications. We verify that RVMYTH executes instructions correctly, the PLL generates stable clocks, and the DAC produces accurate analog outputs.
-
-**Integration Testing**: Testing how components work together. This is where we often find issues that weren't apparent when testing components in isolation.
-
-**System-Level Testing**: Running complete application scenarios to ensure the entire system meets its intended purpose.
-
-### Expected Outputs and Validation
-Our functional model should predict what outputs we'll see for given inputs. For VSDBabySoC, this means:
-
-- Specific analog voltage levels for known digital inputs
-- Timing relationships between clock edges and data changes
-- Power consumption estimates for different operating modes
-
----
-
+Before moving to RTL implementation, we need to thoroughly verify our functional model.
 ## Transition to RTL Design
 
 ### What Functional Modeling Provides
@@ -132,40 +116,6 @@ A good functional model gives us several crucial inputs for RTL design:
 - **Timing Constraints**: Critical timing requirements that must be met
 - **Test Cases**: Scenarios that the RTL implementation must pass
 
-### RTL Design Considerations
-When we move from functional modeling to RTL, we need to consider:
-
-- **Clock Domain Crossings**: How to safely transfer data between different clock domains
-- **Reset Strategies**: How to reliably initialize and reset the system
-- **Synthesis Constraints**: Ensuring our design can be implemented in real hardware
-
----
-
-## Real-World Applications
-
-### Learning Objectives
-VSDBabySoC's functional model teaches us several important concepts:
-
-- How processors generate and manipulate data
-- The critical importance of timing in digital systems
-- How digital and analog domains interface
-- System-level design thinking
-
-### Industry Relevance
-The skills developed through functional modeling of VSDBabySoC directly apply to:
-
-- **Mobile SoC Design**: Understanding how applications processors work
-- **IoT Devices**: Designing systems that interface with sensors and actuators
-- **Automotive Electronics**: Creating reliable embedded systems
-- **Consumer Electronics**: Developing products that combine digital processing with analog interfaces
-
-### Future Enhancements
-The functional model also helps us identify opportunities for system improvements:
-
-- Higher resolution DACs for better analog output quality
-- Multiple clock domains for different system components
-- Additional peripherals like ADCs for sensor inputs
-- Power management units for battery-operated applications
 
 ---
 
@@ -177,7 +127,30 @@ pre req installation for verilog from tlv files
 
 ![Generate RVMYTH Verilog from TLV](../Simulation_assets/Generate_rvmyth_v_from_rvmyth_tlv.png)
 
+    ├── module
+    │   ├── avsddac.v
+    │   ├── avsdpll.v
+    │   ├── clk_gate.v
+    │   ├── pseudo_rand_gen.sv
+    │   ├── pseudo_rand.sv
+    │   ├── rvmyth_gen.v
+    │   ├── rvmyth.tlv
+    │   ├── rvmyth.v
+    │   ├── testbench.rvmyth.post-routing.v
+    │   ├── testbench.v
+    │   └── vsdbabysoc.v
+
+
 ![Compile and Simulate iVerilog using Makefile](../Simulation_assets/Compile_and_simulate_iVerilog_using_makefile.png)
+
+├── output
+│   ├── compiled_tlv
+│   │   ├── rvmyth_gen.v
+│   │   └── rvmyth.v
+│   └── pre_synth_sim
+│       ├── pre_synth_sim.out
+│       └── pre_synth_sim.vcd
+
 
 The VCD dump can be found here: [pre_synth_sim.vcd](../Simulation_assets/pre_synth_sim.vcd)
 
@@ -189,6 +162,8 @@ Reset flow along with clock can be seen below
 make the analog interpolate to get analog wave of OUT signal of the DAC
 
 ![Analog Interpolate of OUT Signal](../Simulation_assets/Analog_interpolate_of_out.png)
+
+![Output Cursor Inspect - RV to DAC vs OUT](../Simulation_assets/Out_curser_inspect_rv_to_Dac_vs_out.png)
 
 ## Conclusion
 
